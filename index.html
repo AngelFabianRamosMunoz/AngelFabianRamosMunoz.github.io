@@ -1,174 +1,235 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Angel Fabian Ramos Munoz - Pagina Personal</title>
-</head>
-<body>
-<h1>Angel Fabian Ramos Munoz</h1>
-<p>Mi primera pagina web</p>
-</body>
-</html>
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="links_referidos.html">links_referidos</a></li>
-        <li><a href="https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw" target="_blank">youtube</a></li>
-    </ul>
-</nav>
-<style>
-body{
-    background-color: #121212;
-    color: white;
-}
-
-a{
-    color: #4da6ff;
-}
-</style>
-<h2>Páginas de mis amigos</h2>
-
-<ul>
-    <li><a href="https://jsalavaldez.github.io/" target="_blank">Jose Salavaldez</a></li>
-    <li><a href="https://ackyul.github.io/yoshuanunez.github.io/" target="_blank">Yoshua Nunez</a></li>
-    <li><a href="https://pagina-de-carlos.com" target="_blank">Carlos Saldivar</a></li>
-</ul>
-</div>
-
-<footer>
-    © 2026 - ANGELCOMPANY
-</footer>
-
-</body>
-</html>
-<style>
-body{
-    background-color:#121212;
-    color:white;
-    font-family:Arial, sans-serif;
-    text-align:center;
-}
-
-/* Títulos */
-h1,h2{
-    color:#09f5e1;
-}
-
-/* Enlaces */
-a{
-    color:#66b3ff;
-    text-decoration:none;
-    padding:8px 15px;
-    border:1px solid #66b3ff;
-    border-radius:10px;
-    margin:5px;
-    display:inline-block;
-}
-
-a:hover{
-    background-color:#66b3ff;
-    color:black;
-}
-
-/* Líneas decorativas */
-hr{
-    border:none;
-    height:2px;
-    background:linear-gradient(to right, transparent, #66b3ff, transparent);
-}
-</style>
-<meta name="description" content="Pagina personal de Angel Fabian Ramos Munoz con proyectos, enlaces y contenido web.">
-<h2>Sobre mi</h2>
-<p>
-Soy estudiante interesado en programacion,
-desarrollo web y tecnologia.
-</p>
-
-<h2>Mis proyectos</h2>
-<p>
-Aqui publicare mis proyectos de programacion.
-</p>
-<meta name="description"
-        content="Página personal de Angel Fabian Ramos Muñoz con enlaces a redes sociales y sitios web de amigos.">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página personal de Angel Fabian Ramos Muñoz con proyectos, enlaces y contenido web.">
     <meta name="author" content="Angel Fabian Ramos Muñoz">
+    <title>Angel Fabian Ramos Munoz - Página Personal</title>
 
     <style>
-        body {
-            background-color: #1e1e1e;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
+        *, *::before, *::after {
+            box-sizing: border-box;
             margin: 0;
-            padding: 30px;
+            padding: 0;
         }
 
-        h1 {
-            font-size: 3em;
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0 20px 60px;
+        }
+
+     
+        nav {
+            background-color: #1a1a1a;
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: #facc15;
+            text-decoration: none;
+            padding: 7px 16px;
+            border: 1px solid #facc15;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: transparent;
+            color: #facc15;
+            box-shadow: 0 0 8px #facc1588;
+        }
+
+      
+        .contenedor {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        
+        header {
+            padding: 60px 0 40px;
+        }
+
+        header h1 {
+            font-size: 2.6em;
+            background: linear-gradient(90deg, #f97316, #facc15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #aaa;
+            font-size: 1.05em;
+        }
+
+        section {
+            margin-top: 50px;
         }
 
         h2 {
-            margin-top: 40px;
+            background: linear-gradient(90deg, #f97316, #facc15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.5em;
+            margin-bottom: 16px;
         }
 
-        a {
-            color: #66b3ff;
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #f97316, #facc15, transparent);
+            margin: 12px auto 24px;
+            width: 60%;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #ccc;
+        }
+
+        .link-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .link-list li a {
+            color: #f97316;
             text-decoration: none;
+            padding: 8px 18px;
+            border: 1px solid #f97316;
+            border-radius: 10px;
+            display: inline-block;
+            transition: background 0.2s, color 0.2s;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .link-list li a:hover {
+            background-color: transparent;
+            color: #f97316;
+            box-shadow: 0 0 8px #f9731688;
         }
 
-        .contenedor {
-            max-width: 900px;
-            margin: auto;
+        .messi-img {
+            border-radius: 12px;
+            border: 2px solid #f97316;
+            margin-top: 16px;
+            max-width: 250px;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+
+        .messi-img:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            margin-top: 70px;
+            color: #555;
+            font-size: 0.85em;
         }
     </style>
 </head>
 
 <body>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="links_referidos.html">Links referidos</a></li>
+            <li><a href="https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw" target="_blank">YouTube</a></li>
+        </ul>
+    </nav>
+
     <div class="contenedor">
 
-        <h1>Mas sobre mi y mis cuentas</h1>
+        <header>
+            <h1>Angel Fabian Ramos Muñoz</h1>
+            <p>Mi página personal</p>
+        </header>
 
-        <p>Página personal.</p>
+        <section>
+            <h2>Sobre mí</h2>
+            <hr>
+            <p>
+                Soy estudiante interesado en programación,
+                desarrollo web y tecnología.
+            </p>
+        </section>
 
-        <h2>Mis redes sociales</h2>
+        <section>
+            <h2>Mis proyectos</h2>
+            <hr>
+            <p>Aquí publicaré mis proyectos de programación.</p>
+        </section>
 
-        <p>
-            <a href="https://www.instagram.com/angelfabrm/" target="_blank">Instagram</a>
-        </p>
+        <section>
+            <h2>Mis redes sociales</h2>
+            <hr>
+            <ul class="link-list">
+                <li><a href="https://www.instagram.com/angelfabrm/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.twitch.tv/matrixramf" target="_blank">Twitch</a></li>
+                <li><a href="https://www.youtube.com/@ramf4646" target="_blank">YouTube - Ramos</a></li>
+                <li><a href="https://www.youtube.com/watch?v=My0YHWCC_HU" target="_blank">YouTube - Clips</a></li>
+            </ul>
+        </section>
 
-        <p>
-            <a href="https://www.twitch.tv/matrixramf" target="_blank">twitch</a>
-        </p>
+        <section>
+            <h2>Páginas de mis amigos</h2>
+            <hr>
+            <ul class="link-list">
+                <li><a href="https://jsalavaldez.github.io/" target="_blank">Jose Salazar</a></li>
+                <li><a href="https://ackyul.github.io/yoshuanunez.github.io/" target="_blank">Yoshua Nuñez</a></li>
+                <li><a href="https://pagina-de-carlos.com" target="_blank">Gabriel M</a></li>
+            </ul>
+        </section>
 
-        <h2>Algunas de mis paginas o canales :D</h2>
-
-        <p>
-            <a href="https://www.youtube.com/@ramf4646" target="_blank">Ramos</a>
-        </p>
-
-        <p>
-            <a href="https://www.youtube.com/watch?v=My0YHWCC_HU" target="_blank">Clips</a>
-        </p>
+        <section>
+            <h2>Mi jugador favorito</h2>
+            <hr>
+            <p>
+                Mi jugador favorito es Lionel Messi. Lo admiro por su talento,
+                su visión de juego y su humildad.
+            </p>
+            <h3 style="color: #aaa; margin-top: 20px; font-size: 1em;">La Pulguita</h3>
+            <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank">
+                <img
+                    class="messi-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Lionel_Messi_26_June_2018_%28cropped%29.jpg/250px-Lionel_Messi_26_June_2018_%28cropped%29.jpg"
+                    alt="Lionel Messi"
+                >
+            </a>
+        </section>
 
     </div>
 
+    <footer>
+        © 2026 - ANGELCOMPANY Derechos reservados
+    </footer>
+
 </body>
-
 </html>
-<h2>Mi jugador favorito</h2>
-
-<p>
-Mi jugador favorito es Lionel Messi. Lo admiro por su talento,
-su visión de juego y su humildad
-</p>
-<h2>La pulgita</h2>
-
-<a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Lionel_Messi_26_June_2018_%28cropped%29.jpg/250px-Lionel_Messi_26_June_2018_%28cropped%29.jpg"
-         alt="Lionel Messi"
-         width="250">
-</a>
