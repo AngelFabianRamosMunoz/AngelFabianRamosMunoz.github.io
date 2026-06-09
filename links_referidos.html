@@ -1,20 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Links Referidos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Links referidos de Angel Fabian Ramos Muñoz.">
+    <title>Links Referidos - Angel Fabian Ramos Munoz</title>
+
+    <style>
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0 20px 60px;
+        }
+        nav {
+            background-color: #1a1a1a;
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: #facc15;
+            text-decoration: none;
+            padding: 7px 16px;
+            border: 1px solid #facc15;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: transparent;
+            color: #facc15;
+            box-shadow: 0 0 8px #facc1588;
+        }
+        .contenedor {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 60px 0 40px;
+        }
+
+        header h1 {
+            font-size: 2.6em;
+            background: linear-gradient(90deg, #f97316, #facc15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #aaa;
+            font-size: 1.05em;
+        }
+        section {
+            margin-top: 50px;
+        }
+
+        h2 {
+            background: linear-gradient(90deg, #f97316, #facc15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.5em;
+            margin-bottom: 16px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #f97316, #facc15, transparent);
+            margin: 12px auto 24px;
+            width: 60%;
+        }
+        .link-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .link-list li a {
+            color: #f97316;
+            text-decoration: none;
+            padding: 8px 18px;
+            border: 1px solid #f97316;
+            border-radius: 10px;
+            display: inline-block;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        }
+
+        .link-list li a:hover {
+            background-color: transparent;
+            color: #f97316;
+            box-shadow: 0 0 8px #f9731688;
+        }
+        footer {
+            margin-top: 70px;
+            color: #555;
+            font-size: 0.85em;
+        }
+    </style>
 </head>
+
 <body>
-<h1>Links Referidos</h1>
-<p>https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw</p>
-<p>https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw</p>
-<p>https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw</p>
-<p>https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw</p>
-<p>https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="links_referidos.html">Links referidos</a></li>
+            <li><a href="https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw" target="_blank">YouTube</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <header>
+            <h1>Links Referidos</h1>
+        </header>
+        <section>
+            <h2>Profesores - Linkedin</h2>
+            <hr>
+            <ul class="link-list">
+                <li><a href="https://www.linkedin.com/in/ecuadrosv" target="_blank">Profesor Ernesto Cuadros</a></li>
+                <li><a href="https://www.linkedin.com/in/kelly-vizconde-la-motta-3a57a4143/" target="_blank">Profesora Kelly Vizconde La Motta</a></li>
+        </section>
+
+        
+        <section>
+            <h2>Amigos - Aqui estan los links de mis compañeros</h2>
+            <hr>
+            <ul class="link-list">
+                <li><a href="https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw" target="_blank">Yoshua Nuñes</a></li>
+                <li><a href="https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw" target="_blank">Carlos Saldivar</a></li>
+                <li><a href="https://www.youtube.com/channel/UCd5xzyfBBoy8tkUotMvl7yw" target="_blank">Josue Vargas</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <section>
+            <h2>Mi Linkedin</h2>
+            <hr>
+            <ul class="link-list">
+                <li><a href="https://www.linkedin.com/in/angel-fabian-ramos-muñoz-6a755a415" target="_blank">Mi Linkedin</a></li>
+            </ul>
+        </section>
+    <footer>
+        © 2026 - ANGELCOMPANY derechos reservados
+    </footer>
+
 </body>
 </html>
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        
-    </ul>
-</nav>
